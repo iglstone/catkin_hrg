@@ -1,0 +1,8 @@
+prefix=/home/gl/catkin_hrg/devel
+
+Name: hrg_camera
+Description: Description of hrg_camera
+Version: 0.0.0
+Cflags: -I/home/gl/catkin_hrg/devel/include
+Libs: -L/home/gl/catkin_hrg/devel/lib 
+Requires: 

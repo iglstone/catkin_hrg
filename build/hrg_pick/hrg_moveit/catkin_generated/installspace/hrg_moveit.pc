@@ -1,0 +1,8 @@
+prefix=/home/gl/catkin_hrg/install
+
+Name: hrg_moveit
+Description: Description of hrg_moveit
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/gl/catkin_hrg/install/lib 
+Requires: 

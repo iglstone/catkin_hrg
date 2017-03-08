@@ -1,0 +1,8 @@
+prefix=/home/gl/catkin_hrg/devel
+
+Name: hrg_bringup
+Description: Description of hrg_bringup
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/gl/catkin_hrg/devel/lib 
+Requires: 

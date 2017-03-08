@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<launch>
+    <arg name="arg_name"         default="true" />
+
+    <group if="$(arg arg_name)">
+		<node pkg="hrg_camera" type="ReqCamera_server.py" name="node_camera_server" output="screen">
+        </node>
+
+        <node pkg="hrg_camera" type="node_takePicture.py" name="node_takePicture" output="screen">
+        </node>
+	</group>
+
+
+	<group unless="$(arg arg_name)">
+
+	</group>
+
+</launch>
+
+<!-- in new terminal run: rostopic pub /startTakePicure std_msgs/String ++ "xxoo" -->

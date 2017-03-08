@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <node pkg="hrg_camera" type="ReqCamera_server.py" name="node_camera_server" output="screen">
+    </node>
+
+    <node pkg="hrg_camera" type="node_takePicture.py" name="node_takePicture" output="screen">
+    </node>
+
+</launch>

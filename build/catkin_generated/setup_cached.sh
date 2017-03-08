@@ -8,7 +8,7 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/gl/catkin_hrg/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/opt/ros/indigo/lib/x86_64-linux-gnu:/home/gl/catkin_ws/devel/lib:/opt/ros/indigo/lib"
+export LD_LIBRARY_PATH="/home/gl/catkin_hrg/devel/lib:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/gl/catkin_ws/devel/lib:/opt/ros/indigo/lib"
 export PKG_CONFIG_PATH="/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/gl/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
 export PWD="/home/gl/catkin_hrg/build"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/gl/catkin_hrg/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"

@@ -1,0 +1,2 @@
+set(hrg_movebase_MESSAGE_FILES "/home/gl/catkin_hrg/devel/share/hrg_movebase/msg/DoDishesAction.msg;/home/gl/catkin_hrg/devel/share/hrg_movebase/msg/DoDishesActionGoal.msg;/home/gl/catkin_hrg/devel/share/hrg_movebase/msg/DoDishesActionResult.msg;/home/gl/catkin_hrg/devel/share/hrg_movebase/msg/DoDishesActionFeedback.msg;/home/gl/catkin_hrg/devel/share/hrg_movebase/msg/DoDishesGoal.msg;/home/gl/catkin_hrg/devel/share/hrg_movebase/msg/DoDishesResult.msg;/home/gl/catkin_hrg/devel/share/hrg_movebase/msg/DoDishesFeedback.msg")
+set(hrg_movebase_SERVICE_FILES "")

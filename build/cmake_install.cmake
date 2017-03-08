@@ -117,6 +117,11 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/gl/catkin_hrg/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/gl/catkin_hrg/build/hrg_pick/hrg_bringup/cmake_install.cmake")
+  INCLUDE("/home/gl/catkin_hrg/build/hrg_pick/hrg_camera/cmake_install.cmake")
+  INCLUDE("/home/gl/catkin_hrg/build/hrg_pick/hrg_grasp/cmake_install.cmake")
+  INCLUDE("/home/gl/catkin_hrg/build/hrg_pick/hrg_moveit/cmake_install.cmake")
+  INCLUDE("/home/gl/catkin_hrg/build/hrg_pick/hrg_movebase/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

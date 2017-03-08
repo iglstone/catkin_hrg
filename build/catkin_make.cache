@@ -1,2 +1,2 @@
-
+hrg_pick/hrg_bringup:hrg_pick/hrg_camera:hrg_pick/hrg_grasp:hrg_pick/hrg_movebase:hrg_pick/hrg_moveit
 -DCATKIN_DEVEL_PREFIX=/home/gl/catkin_hrg/devel -DCMAKE_INSTALL_PREFIX=/home/gl/catkin_hrg/install -G Unix Makefiles

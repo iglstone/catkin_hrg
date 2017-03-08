@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <arg name="fake_start"                 default="true" />
+	<arg name="fake_movebase"              default="false" />
+	<arg name="fake_camera"                default="false" />
+	<arg name="fake_motionPlan"            default="false" />
+	<arg name="fake_grasp"                 default="false" />
+
+	<!-- <node name="camera_calibration_publisher" type="static_transform_publisher" pkg="tf" output="screen" args="0 0 0 0 0 0 gripper_camera_depth camera_optical_frame 100"/> -->
+
+	<group if="$(arg fake_start)">
+		<node name="node_start" type="node_start.py" pkg="hrg_bringup" output="screen">
+			<!-- <param name="publish_rate" value="100" /> -->
+		</node>
+
+		<node pkg="hrg_movebase" type="node_goto_position.py" name="node_goto_position11" output="screen">
+			<!-- <remap from="joint_states" to="/gripper_driver/joint_states" /> -->
+		</node>
+
+        <node pkg="hrg_camera" type="ReqCamera_server.py" name="node_camera_server" output="screen">
+		</node>
+		<node pkg="hrg_camera" type="node_takePicture.py" name="node_takePicture11" output="screen">
+		</node>
+
+		<node pkg="hrg_moveit" type="node_motion_plan.py" name="node_motion_plan" output="screen">
+		</node>
+
+		<node pkg="hrg_grasp" type="node_grasp.py" name="node_grasp11" output="screen">
+		</node>
+
+	</group>
+
+
+	<group unless="$(arg fake_start)">
+	</group>
+
+</launch>
+
+<!-- in new terminal run: rostopic pub /startStartNode std_msgs/String -- "xxoo" -->
