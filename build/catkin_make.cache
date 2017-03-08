@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/gl/catkin_hrg/devel -DCMAKE_INSTALL_PREFIX=/home/gl/catkin_hrg/install -G Unix Makefiles
